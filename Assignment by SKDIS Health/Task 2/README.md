@@ -1,5 +1,6 @@
+# assingment
+
 ﻿Interview assignment :
-date : 23/Jun/2023
 
 Record a video of your face for 1 minute. 
 Mark a small region of interest on forehead.
