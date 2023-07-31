@@ -1,0 +1,41 @@
+Order Number,Order Received Time,Dish,Start Time,End Time,Operation
+1,0 sec,Vegetable Pasta,0 sec,5 sec,Picking up a new bowl
+1,0 sec,Vegetable Pasta,5 sec,10 sec,Picking up ingredients 
+1,0 sec,Vegetable Pasta,10 sec,15 sec,Placing bowl on stove 
+1,0 sec,Vegetable Pasta,15 sec,75 sec,saute on saute_0
+1,0 sec,Vegetable Pasta,75 sec,80 sec,Picking up ingredients 
+1,0 sec,Vegetable Pasta,80 sec,85 sec,Placing bowl on stove 
+1,0 sec,Vegetable Pasta,85 sec,205 sec,saute on saute_0
+2,80 sec,Chicken Alfredo Pasta,90 sec,95 sec,Picking up a new bowl
+2,80 sec,Chicken Alfredo Pasta,95 sec,100 sec,Picking up ingredients 
+2,80 sec,Chicken Alfredo Pasta,100 sec,105 sec,Placing bowl on stove 
+2,80 sec,Chicken Alfredo Pasta,105 sec,165 sec,saute on saute_1
+3,130 sec,Paneer Butter Masala Rice,130 sec,135 sec,Picking up a new bowl
+3,130 sec,Paneer Butter Masala Rice,135 sec,140 sec,Picking up ingredients 
+3,130 sec,Paneer Butter Masala Rice,140 sec,145 sec,Placing bowl on stove 
+3,130 sec,Paneer Butter Masala Rice,145 sec,205 sec,saute on saute_2
+2,80 sec,Chicken Alfredo Pasta,165 sec,170 sec,Picking up ingredients 
+2,80 sec,Chicken Alfredo Pasta,170 sec,175 sec,Placing bowl on stove 
+2,80 sec,Chicken Alfredo Pasta,175 sec,295 sec,saute on saute_1
+1,0 sec,Vegetable Pasta,205 sec,210 sec,Add ingredients 
+1,0 sec,Vegetable Pasta,210 sec,270 sec,saute on saute_0
+3,130 sec,Paneer Butter Masala Rice,215 sec,220 sec,Picking up ingredients 
+3,130 sec,Paneer Butter Masala Rice,220 sec,225 sec,Placing bowl on stove 
+3,130 sec,Paneer Butter Masala Rice,225 sec,345 sec,saute on saute_2
+1,0 sec,Vegetable Pasta,270 sec,275 sec,Removing bowl 
+4,150 sec,Chicken Fried Rice,275 sec,280 sec,Picking up a new bowl
+4,150 sec,Chicken Fried Rice,280 sec,285 sec,Picking up ingredients 
+4,150 sec,Chicken Fried Rice,285 sec,290 sec,Placing bowl on stove 
+4,150 sec,Chicken Fried Rice,290 sec,350 sec,saute on saute_0
+2,80 sec,Chicken Alfredo Pasta,295 sec,300 sec,Add ingredients 
+2,80 sec,Chicken Alfredo Pasta,300 sec,360 sec,saute on saute_1
+3,130 sec,Paneer Butter Masala Rice,345 sec,350 sec,Add ingredients 
+3,130 sec,Paneer Butter Masala Rice,350 sec,410 sec,saute on saute_0
+4,150 sec,Chicken Fried Rice,355 sec,360 sec,Picking up ingredients 
+2,80 sec,Chicken Alfredo Pasta,360 sec,365 sec,Removing bowl 
+4,150 sec,Chicken Fried Rice,365 sec,370 sec,Placing bowl on stove 
+4,150 sec,Chicken Fried Rice,370 sec,490 sec,saute on saute_1
+3,130 sec,Paneer Butter Masala Rice,410 sec,415 sec,Removing bowl 
+4,150 sec,Chicken Fried Rice,490 sec,495 sec,Add ingredients 
+4,150 sec,Chicken Fried Rice,495 sec,555 sec,saute on saute_0
+4,150 sec,Chicken Fried Rice,555 sec,560 sec,Removing bowl 
