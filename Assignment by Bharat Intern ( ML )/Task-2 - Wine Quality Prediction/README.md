@@ -3,4 +3,5 @@
 TASK : 2
 
 Wine Quality Prediction :
-Machine Learning model to predict the quality of wine using linear regression.
+Wine Quality Prediction : Machine Learning model to classify whether quality of wine is above threshold or not.
+
