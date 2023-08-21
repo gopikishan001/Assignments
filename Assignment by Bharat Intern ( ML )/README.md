@@ -3,14 +3,14 @@
 TASK : 1
 
 House Price Prediction :
-Machine Learning model to predict house price.
+Machine Learning model to predict house price using linear regression.
 
 -------------------------------------------------------------------------------------------------------
 
 TASK : 2
 
 Wine Quality Prediction :
-Machine Learning model to predict the quality of wine.
+Machine Learning model to predict the quality of wine using linear regression.
 
 -------------------------------------------------------------------------------------------------------
 

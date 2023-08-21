@@ -3,5 +3,5 @@
 TASK : 1
 
 House Price Prediction :
-Machine Learning model to predict house price.
+Machine Learning model to predict house price using linear regression.
 
