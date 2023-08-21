@@ -2,8 +2,9 @@
 
 TASK : 3
 
-Iris Flowers Classification :
-Predict the different species of flowers on the length of there petals and sepals.
+Iris Flowers Classification : 
+Classify the different species of flowers based on the length of their petals and sepals.
+
 
 
 
