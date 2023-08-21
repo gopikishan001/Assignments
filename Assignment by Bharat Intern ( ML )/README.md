@@ -17,7 +17,7 @@ Machine Learning model to classify whether quality of wine is above threshold or
 TASK : 3
 
 Iris Flowers Classification :
-Classify the different species of flowers based on the length of there petals and sepals.
+Classify the different species of flowers based on the length of their petals and sepals.
 
 
 
