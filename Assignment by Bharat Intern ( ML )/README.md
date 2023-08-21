@@ -10,14 +10,14 @@ Machine Learning model to predict house price using linear regression.
 TASK : 2
 
 Wine Quality Prediction :
-Machine Learning model to predict the quality of wine using linear regression.
+Machine Learning model to classify whether quality of wine is above threshold or not.
 
 -------------------------------------------------------------------------------------------------------
 
 TASK : 3
 
 Iris Flowers Classification :
-Predict the different species of flowers on the length of there petals and sepals.
+Classify the different species of flowers based on the length of there petals and sepals.
 
 
 
