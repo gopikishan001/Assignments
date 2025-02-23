@@ -76,14 +76,14 @@ dir-tree ->
 
 ## Screenshots
 
-![Screenshot](screenshot/1.png)  
+![Screenshot](screenshots/1.png)  
 Upload page  
 
-![Screenshot](screenshot/2.png)  
+![Screenshot](screenshots/2.png)  
 Successfully uploaded and job started in async  
 
-![Screenshot](screenshot/3.png)  
+![Screenshot](screenshots/3.png)  
 If there is any error in CSV, or job steps, then the issue is displayed  
 
-![Screenshot](screenshot/4.png)  
+![Screenshot](screenshots/4.png)  
 Database (MySQL)
