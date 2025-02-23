@@ -38,6 +38,7 @@ Reduce image size by 50% (tested on image of 20kb which reduced to 7kb)
 
 ## Directory Tree
 
+<pre>
 dir-tree ->
 	├── app.py
 	├── data
@@ -70,6 +71,8 @@ dir-tree ->
 	    ├── download_images.py
 	    ├── generate_out_csv.py
 	    ├── process_images.py
+
+</pre>
 
 ## Screenshots
 
