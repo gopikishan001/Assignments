@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV sanitary check - Errors found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .error-message {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f8d7da;
+        }
+        h1 {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSV Upload Errors</h1>
+    <div class="error-message">
+        <strong>Errors found in the CSV file:</strong>
+        <ul>
+            {% for error in errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="/">Go back and upload another file</a>
+</body>
+</html>
