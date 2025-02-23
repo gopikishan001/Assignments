@@ -1,37 +1,42 @@
-Image Processing
+# Image Processing
 
 Reduce image size by 50% (tested on image of 20kb which reduced to 7kb)
 
-tech stack : fast API, sqlalchemy, pillow
+**Tech Stack**: FastAPI, SQLAlchemy, Pillow
 
-setup ->
-	* python -m venv env
-	* source env/bin/activate
-	* pip install -r requirements.txt
-	* pip install sqlalchemy mysqlclient fastapi
-	* sudo mysql -u root -p
-		- database should have a user : "user", with password : "pass"
-		- create a data base named "image_processing"
+## Setup
 
-execution -> 
-	* uvicorn app:app --reload
-	* go to page "http://127.0.0.1:8000/"
+- `python -m venv env`
+- `source env/bin/activate`
+- `pip install -r requirements.txt`
+- `pip install sqlalchemy mysqlclient fastapi`
+- `sudo mysql -u root -p`
+    - database should have a user: "user", with password: "pass"
+    - create a database named "image_processing"
 
-flow -> 
-	* uploaded csv gets saved in local folder. (data/in_csv_files) 
-	* csv goes thorugh a check for few conditions, all failed conditions are shown to user. if not failed then flow continues.
-	* a new reference number is generated base on total no of entries till now and timestamp. 
-	* this reference number is sent to the user and a new async job is created with this referene id 
-	* database also gets logged with this new reference number
-	* job 
-		- all images get downloaded to local folder (data/raw_images)
-		- to be unique image name is coded with reference number + s.no. + product name + image sequence no
-		- all images are reduced one by one using pillow (50% in height and width)
-		- new csv is created with this data 
-	* at every step of the job the database gets updated. (status field)
-	* when user comes back for new images. the same reference number is used.
-	* if job status is done successfully then he can download the new updated csv. if there is any error, it is displayed while check for job status
-	* job status can be fetched any time, as it is updated after every step.
+## Execution
+
+- `uvicorn app:app --reload`
+- Go to page "http://127.0.0.1:8000/"
+
+## Flow
+
+- Uploaded CSV gets saved in local folder (`data/in_csv_files`).
+- CSV goes through a check for a few conditions, all failed conditions are shown to the user. If not failed, then flow continues.
+- A new reference number is generated based on the total number of entries till now and timestamp.
+- This reference number is sent to the user and a new async job is created with this reference ID.
+- Database also gets logged with this new reference number.
+- **Job**:
+    - All images get downloaded to the local folder (`data/raw_images`).
+    - To be unique, image name is coded with reference number + serial number + product name + image sequence number.
+    - All images are reduced one by one using Pillow (50% in height and width).
+    - A new CSV is created with this data.
+- At every step of the job, the database gets updated (status field).
+- When the user comes back for new images, the same reference number is used.
+- If the job status is done successfully, the user can download the new updated CSV. If there is any error, it is displayed while checking the job status.
+- Job status can be fetched at any time, as it is updated after every step.
+
+## Directory Tree
 
 dir-tree ->
 	├── app.py
@@ -66,20 +71,16 @@ dir-tree ->
 	    ├── generate_out_csv.py
 	    ├── process_images.py
 
-screen-shots ->
-![Screenshot](screenshot/1.jpg)
-upload page 
+## Screenshots
 
-![Screenshot](screenshot/2.jpg)
-successfully uploaded and job started in async
+![Screenshot](screenshot/1.jpg)  
+Upload page  
 
-![Screenshot](screenshot/3.jpg)
-if there is any error in csv, or job steps then issue is displayed
+![Screenshot](screenshot/2.jpg)  
+Successfully uploaded and job started in async  
 
-![Screenshot](screenshot/4.jpg)
-database (mysql)
+![Screenshot](screenshot/3.jpg)  
+If there is any error in CSV, or job steps, then the issue is displayed  
 
-	
-
-
-
+![Screenshot](screenshot/4.jpg)  
+Database (MySQL)
