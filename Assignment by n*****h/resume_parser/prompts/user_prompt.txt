@@ -1,0 +1,81 @@
+Extract the requested information from the resume below.
+
+Follow these rules:
+
+* Return exactly one JSON object.
+* Follow the schema exactly.
+* Do not add additional fields.
+* Use null for missing scalar values.
+* Use [] for missing arrays.
+* If an entire section does not exist, return an empty array instead of an object containing null values.
+* Preserve values exactly as they appear in the resume.
+* Dates should remain in their original format.
+* Extract only information that maps to the fields defined in the schema.
+
+JSON Schema:
+
+{
+  "contact": {
+    "name": null,
+    "email": null,
+    "phone": null,
+    "location": null,
+    "linkedin": null,
+    "github": null,
+    "website": null
+  },
+
+  "summary": null,
+
+  "education": [
+    {
+      "institution": null,
+      "degree": null,
+      "field": null,
+      "graduation_year": null,
+      "gpa": null
+    }
+  ],
+
+  "experience": [
+    {
+      "company": null,
+      "position": null,
+      "start_date": null,
+      "end_date": null,
+      "duration": null,
+    }
+  ],
+
+  "skills": {
+    "programming_languages": [],
+    "frameworks": [],
+    "tools": [],
+    "databases": [],
+    "cloud": [],
+    "technical": [],
+    "soft": []
+  },
+
+  "certifications": [
+    {
+      "name": null,
+      "issuer": null,
+      "year": null
+    }
+  ],
+
+  "projects": [
+    {
+      "name": null,
+      "technologies": []
+    }
+  ],
+
+  "awards": [],
+
+  "publications": []
+}
+
+Resume Text:
+
