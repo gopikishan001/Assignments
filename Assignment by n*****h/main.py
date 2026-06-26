@@ -77,9 +77,9 @@ def main():
 
             results.append(
                 {
-                    "_file": resume_file.name,
-                    "_path": str(resume_file),
-                    "_status": "success",
+                    "file": resume_file.name,
+                    "path": str(resume_file),
+                    "status": "success",
                     "data": parsed_json
                 }
             )
@@ -91,10 +91,10 @@ def main():
 
             failed_results.append(
                 {
-                    "_file": resume_file.name,
-                    "_path": str(resume_file),
-                    "_status": "failed",
-                    "_error": str(error)
+                    "file": resume_file.name,
+                    "path": str(resume_file),
+                    "status": "failed",
+                    "error": str(error)
                 }
             )
 
