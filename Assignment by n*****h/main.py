@@ -64,8 +64,7 @@ def main():
 
         print(f"\n{index} {resume_file.name}")
 
-        if True :
-        # try:
+        try:
 
             validate_resume_file(str(resume_file), allowed_extensions, max_size_mb)
             text = extract_text(str(resume_file))
@@ -87,17 +86,17 @@ def main():
 
             print("Success")
 
-        # except Exception as error:
-        #     print(f"Failed: {str(error)}")
+        except Exception as error:
+            print(f"Failed: {str(error)}")
 
-        #     failed_results.append(
-        #         {
-        #             "_file": resume_file.name,
-        #             "_path": str(resume_file),
-        #             "_status": "failed",
-        #             "_error": str(error)
-        #         }
-        #     )
+            failed_results.append(
+                {
+                    "_file": resume_file.name,
+                    "_path": str(resume_file),
+                    "_status": "failed",
+                    "_error": str(error)
+                }
+            )
 
     save_json(results, output_file)
     save_json(failed_results, failed_output_file)
